@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.gaurang.com/my/soap"
+           targetNamespace="http://www.gaurang.com/my/soap" elementFormDefault="qualified">
+
+    <xs:element name="getMyDetailsRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getMyDetailsResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="mydetails" type="tns:MyDetails"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="MyDetails">
+        <xs:sequence>
+            <xs:element name="firstname" type="xs:string"/>
+            <xs:element name="lastname" type="xs:string"/>
+            <xs:element name="age" type="xs:int"/>            
+        </xs:sequence>
+    </xs:complexType>
+        
+</xs:schema>

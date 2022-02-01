@@ -1,0 +1,19 @@
+**/bin/**
+**/target/**
+!**/src/main/**/target/
+!**/src/test/**/target/
+**/test_output/
+**/generated/
+**/app/lib/**
+**/app/pids/**
+**/*.log
+spy.log
+ksf-rest-api**/src/main/java/**
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: my  
+  main:
+    allow-bean-definition-overriding: true
+    
+server:
+  port: 8080
+  
+logging:
+  level:    
+    com:
+      gaurang: TRACE
+      sun: 
+        faces: TRACE
+    
